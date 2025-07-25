@@ -2,6 +2,7 @@ import pytest
 
 from pom.login_page import LoginPage
 
+@pytest.mark.regression
 def test_login_director(set_up):
     page = set_up
     login_page = LoginPage(page)

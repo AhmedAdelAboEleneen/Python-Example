@@ -2,7 +2,7 @@ import pytest
 from playwright.sync_api import Playwright
 
 @pytest.fixture
-def set_up(playwright: Playwright) -> None:
+def set_up(playwright):
     browser = playwright.chromium.launch(headless=False, slow_mo=500)
     page = browser.new_page()
     page.goto("http://yxdemo.eastus.cloudapp.azure.com/CHECK/Demo/IA/Site/login")

@@ -2,4 +2,5 @@
 .venv/bin
 /.venv/
 /.idea/
-/utils/secert_config.py
+/utils/secret_config.py
+*.env
